@@ -1,0 +1,108 @@
+.iw_form {
+    background: #1f2833;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px 0;
+
+    .formSection {
+        margin-bottom: 20px;
+        width: 80%;
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input {
+            background: #0b0c10;
+            color: #f9f9f9;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: none;
+            background: #0b0c10;
+            color: #f9f9f9;
+            width: 100%;
+            height: 200px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 5px;
+        }
+    }
+
+    .formImg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+            background: #66fcf1;
+            padding: 5px;
+            border-radius: 5px;
+            color: #000000;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+    }
+
+    .progressBar {
+        background: #0b0c10;
+        width: 80%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 1000px;
+
+        .porcentaje {
+            display: block;
+            border-radius: 1000px;
+            background: #66fcf1;
+            width: 0%;
+            height: 100%;
+        }
+    }
+
+    button[type="submit"] {
+        background: transparent;
+        border: 2px solid #66fcf1;
+        outline: none;
+        color: #f9f9f9;
+        font-size: 18px;
+        cursor: pointer;
+        min-height: 35px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .iw_form {
+        width: 350px;
+        font-size: 20px;
+
+        .formSection {
+            input {
+                font-size: 20px;
+            }
+
+            textarea {
+                font-size: 20px;
+            }
+        }
+
+        button[type="submit"] {
+            font-size: 20px;
+        }
+    }
+}

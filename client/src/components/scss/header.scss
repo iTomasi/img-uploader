@@ -1,0 +1,103 @@
+.iw_header-DK {
+    background: #1f2833;
+    display: flex;
+    font-size: 20px;
+    height: 63px;
+    align-items: center;
+    text-align: center;
+
+    .left, .right {width: 25%;}
+
+    nav {
+        width: 50%;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #f9f9f9;
+                }
+
+                a:hover {
+                    border-bottom: 3px solid #66fcf1;
+                    padding: 18px 0;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        h2 {
+            font-size: 20px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.iw_header-MB {
+
+    background: #1f2833;
+    font-size: 25px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        height: 63px;
+
+        h2 {
+            font-size: 22px;
+        }
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+
+        ul {
+            background: #1f2833;
+            position: absolute;
+            top: 65px;
+            left: 10px;
+            list-style: none;
+            width: 200px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #f9f9f9;
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+
+                a:hover {
+                    background: #66fcf1;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

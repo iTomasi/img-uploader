@@ -1,0 +1,35 @@
+.content {
+
+    padding: 30px 0;
+
+    .imgs {
+        display: grid;
+        grid-template-columns: 240px;
+        justify-content: center;
+        gap: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        .imgs {
+            grid-template-columns: repeat(2, 240px)
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .content {
+        .imgs {
+            grid-template-columns: repeat(3, 240px);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        .imgs {
+            grid-template-columns: repeat(3, 350px)
+        }
+    }
+}

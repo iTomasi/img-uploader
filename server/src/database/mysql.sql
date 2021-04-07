@@ -1,0 +1,12 @@
+CREATE TABLE accounts (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE posts (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL,
+    comment VARCHAR(100) NOT NULL,
+    theimg TEXT NOT NULL
+);
